@@ -6,6 +6,9 @@ if not (getrawmetatable and getupvalues and setupvalue and (getreg or debug.getr
 	wait(3)
 	h:Destroy()
 	return
+	print("========================================")
+	print("Autofarm has been loaded...")
+	print("========================================")
 end
 local settings = {refill_at=50, refill_end=97, stay_in_kitchen=true}
 local doCashier,doBoxer,doCook,doSupplier,doDelivery = true,true,true,true,true
