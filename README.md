@@ -5,7 +5,7 @@ loadstring:
 loadstring(game:HttpGet("https://raw.githubusercontent.com/2l2cgit/Horizons-Autofarm-Pizza-Place/main/Pizza%20Place%20AutoFarm.lua"))();
 
 Supported Executors:
-Krnl
-Synapse X
+Krnl,
+Synapse X,
 Script-Ware
 and others
