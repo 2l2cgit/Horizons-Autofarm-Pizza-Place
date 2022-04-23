@@ -8,7 +8,7 @@ if not (getrawmetatable and getupvalues and setupvalue and (getreg or debug.getr
 	return
 end
 local settings = {refill_at=50, refill_end=97, stay_in_kitchen=true}
-local doCashier,doBoxer,doCook,doSupplier,doDelivery = true,true,true,true,true
+local doCashier,doBoxer,doCook,doSupplier,doDelivery = false,false,false,false,false
 if readfile then
 	pcall(function()
 		local new = game:GetService("HttpService"):JSONDecode(readfile("PizzaFarm.txt"))
