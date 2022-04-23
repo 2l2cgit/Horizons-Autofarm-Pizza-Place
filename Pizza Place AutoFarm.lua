@@ -216,7 +216,7 @@ allOffBtn.InputBegan:Connect(function()
 		toggleDelivery(false)
 		toggleSupplier(false)
 		print("========================================")
-		print("Autofarm has been stopped..."
+		print("Autofarm has been stopped...")
 		print("========================================")
 		toggleAllSlider:TweenPosition(UDim2.new(0,0,0,-2),nil,"Sine",0.1,true)
 		wait(1)
