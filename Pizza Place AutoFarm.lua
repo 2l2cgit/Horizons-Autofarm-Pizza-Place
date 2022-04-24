@@ -248,10 +248,6 @@ allOnBtn.InputBegan:Connect(function()
 		end
 	end
 end)
-kitchenBtn.MouseButton1Click:Connect(function()
-	settings.stay_in_kitchen = not settings.stay_in_kitchen
-	kitchenBtn.Text = settings.stay_in_kitchen and "X" or ""
-end)
 local oldRefillAt=refillAtBox.Text
 refillAtBox:GetPropertyChangedSignal("Text"):Connect(function()
 	if #refillAtBox.Text>2 or refillAtBox.Text:match("%D") then
