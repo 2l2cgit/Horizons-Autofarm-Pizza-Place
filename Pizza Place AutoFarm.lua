@@ -117,6 +117,11 @@ Label=Create("TextLabel",cashier,{TextWrapped=true, Size=UDim2.new(0.6,0,1,0), T
 	BackgroundTransparency=1, Position=UDim2.new(0.4,0,0,0), TextColor3=Color3.new(1,1,1), TextScaled=true, BackgroundColor3=Color3.new(1,1,1)})
 cashierBtn=Create("ImageButton",cashier,{Name="cashierBtn", ImageTransparency=1, BorderSizePixel=0, Size=UDim2.new(0.38,0,1,0), BackgroundColor3=Color3.new(0.392,0.392,0.392)})
 cashierSlider=Create("Frame",cashierBtn,{Name="slider", Size=UDim2.new(0.5,-4,1,-4), Position=UDim2.new(doCashier and 0.5 or 0,2,0,2), BorderSizePixel=0, BackgroundColor3=Color3.new(0.784,0.784,0.784)})
+kitchen=Create("Frame",settings_1,{Name="kitchen", LayoutOrder=9, BackgroundTransparency=1, Size=UDim2.new(0,100,0,100), BackgroundColor3=Color3.new(1,1,1)})
+Label_2=Create("TextLabel",kitchen,{TextWrapped=true, Size=UDim2.new(0.6,0,1,0), Text="", TextSize=14, TextXAlignment="Right", Font="SourceSans",
+	BackgroundTransparency=1, TextColor3=Color3.new(1,1,1), TextScaled=true, BackgroundColor3=Color3.new(.335,0,0.02,0)})
+kitchenBtn=Create("TextButton",kitchen,{Name="kitchenBtn", TextWrapped=true, Size=UDim2.new(0,0,0,0), TextColor3=Color3.new(), Text=settings.stay_in_kitchen and "X" or "", Font="GothamBold",
+	Position=UDim2.new(0.62,0,0,0), TextSize=35, TextScaled=true, BackgroundColor3=Color3.new(.335,0,0.02,0)})
 refillEnd=Create("Frame",settings_1,{Name="refillEnd", LayoutOrder=8, BackgroundTransparency=1, Size=UDim2.new(0,100,0,100), BackgroundColor3=Color3.new(1,1,1)})
 refillEndBox=Create("TextBox",refillEnd,{Name="refillEndBox", TextWrapped=true, Size=UDim2.new(0.25,0,1,0), Text=tostring(settings.refill_end), TextSize=50, TextColor3=Color3.new(),
 	Font="Code", Position=UDim2.new(0.62,0,0,0), TextScaled=true, BackgroundColor3=Color3.new(0.784,0.784,0.784)})
@@ -159,8 +164,8 @@ rightCamBtn=Create("ImageButton",camframe,{Name="rightCamBtn", Image="rbxassetid
 	BackgroundColor3=Color3.new(1,1,1)})
 leftCamBtn=Create("ImageButton",camframe,{Name="leftCamBtn", Image="rbxassetid://144168163", Size=UDim2.new(0.333,0,1,0), BackgroundTransparency=1, BackgroundColor3=Color3.new(1,1,1)})
 centerCamBtn=Create("ImageButton",camframe,{Name="centerCamBtn", Image="rbxassetid://58282192", Size=UDim2.new(0.333,0,1,0), Position=UDim2.new(0.333,0,0,0), BackgroundTransparency=1, BackgroundColor3=Color3.new(1,1,1)})
-creditLbl=Create("TextLabel",main,{Position=UDim2.new(0.052,0,1,5),Size=UDim2.new(0,100,0,15),BackgroundTransparency=1,TextColor3=Color3.new(1,1,1),Text="by HorizonC + Region259",TextScaled=false,TextStrokeTransparency=.8})
-creditLbl=Create("TextLabel",main,{Position=UDim2.new(0.1362,0,1.2,5),Size=UDim2.new(0,100,0,15),BackgroundTransparency=1,TextColor3=Color3.new(1,1,1),Text="disc HorizonC#8291 + Region259#5504",TextScaled=false,TextStrokeTransparency=.8})
+creditLbl=Create("TextLabel",main,{TextXAlignment="Left",Position=UDim2.new(0,0,1,5),Size=UDim2.new(0,100,0,15),BackgroundTransparency=1,TextColor3=Color3.new(1,1,1),Text="by HorizonC + Region259",TextScaled=false,TextStrokeTransparency=.8})
+creditLbl=Create("TextLabel",main,{TextXAlignment="Left",Position=UDim2.new(0,0,1.2,5),Size=UDim2.new(0,100,0,15),BackgroundTransparency=1,TextColor3=Color3.new(1,1,1),Text="disc HorizonC#8291 + Region259#5504",TextScaled=false,TextStrokeTransparency=.8})
 
 local function toggleCashier(bool)
 
