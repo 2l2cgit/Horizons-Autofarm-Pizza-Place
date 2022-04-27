@@ -38,8 +38,10 @@ if readfile then
 			writefile("PizzaFarm.txt",game:GetService("HttpService"):JSONEncode(new))
 		end
 		settings = new
+            Print("==================================") 
 	    print("Autofarm has been loaded")
-		print("farming...")
+            print("farming...")
+            print("==================================") 
 	end)
 end
 
